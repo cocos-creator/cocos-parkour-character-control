@@ -66,7 +66,8 @@
     },
     "_materials": [
       {
-        "__uuid__": "7e39a504-7e84-4394-8364-e699ec12818d"
+        "__uuid__": "7e39a504-7e84-4394-8364-e699ec12818d",
+        "__expectedType__": "cc.Material"
       }
     ],
     "_visFlags": 0,
@@ -74,7 +75,8 @@
       "__id__": 4
     },
     "_mesh": {
-      "__uuid__": "1263d74c-8167-4928-91a6-4e2672411f47@17020"
+      "__uuid__": "1263d74c-8167-4928-91a6-4e2672411f47@17020",
+      "__expectedType__": "cc.Mesh"
     },
     "_shadowCastingMode": 0,
     "_shadowReceivingMode": 1,

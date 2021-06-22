@@ -1,5 +1,5 @@
 
-import { _decorator, Component, Node, Vec3 } from 'cc';
+import { _decorator, Component, Node, Vec3, director } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('FollowCamera')
@@ -8,7 +8,7 @@ export class FollowCamera extends Component {
     @property(Node)
     followTarget: Node | null = null!;
 
-    update(deltaTime: number) {
+    lateUpdate(deltaTime: number) {
         if (this.followTarget) {
             const pos = this.followTarget.worldPosition;
             const pos2 = this.node.worldPosition;

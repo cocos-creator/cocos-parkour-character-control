@@ -18,13 +18,10 @@
         <link rel="stylesheet" type="text/css" href="./index.css" />
     </head>
     <body>
-        <script src="./physx/physx.debug.asm.js"></script>
+        <!-- 3.2 不再需要手动加载 physx -->
+        <!-- <script src="./physx/physx.release.asm.js"></script> -->
         <script>
-            globalThis.PhysX = PHYSX({
-              onRuntimeInitialized () {
-                console.log('PhysX loaded')
-              },
-            })
+            // globalThis.PhysX = PHYSX;
         </script>
         <%- include(cocosToolBar, {config: config}) %>
         <div id="content" class="content">
