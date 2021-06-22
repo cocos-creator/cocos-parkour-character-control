@@ -83,11 +83,9 @@ export class RigidCharacter extends Component {
 
     move (dir: Vec3, speed: number) {
         this._rigidBody.getLinearVelocity(_v3_0);
-        console.log('getLinearVelocity1' + _v3_0);
-        let y = _v3_0.y;
+        // console.log('getLinearVelocity1' + _v3_0);
         Vec3.scaleAndAdd(_v3_0, _v3_0, dir, speed);
 
-        // _v3_0.y = 0;
         const ms = this.maxSpeed;
         const len = _v3_0.lengthSqr();
         if (len > ms) {
@@ -95,21 +93,21 @@ export class RigidCharacter extends Component {
             _v3_0.multiplyScalar(ms);
         }
 
-        let v = this._groundNormal;
-        v.negative();
-        Vec3.scaleAndAdd(_v3_0, _v3_0, v, 1);
+        // let v = this._groundNormal;
+        // v.negative();
+        // Vec3.scaleAndAdd(_v3_0, _v3_0, v, 1);
 
-        // //修正y轴速度
-        if(this._altitudeDiff < 0.2) {
-            _v3_0.y = 0;
-        }
-        _v3_0.y = Math.round(_v3_0.y * 10)/10;
+        // // //修正y轴速度
+        // if(this._altitudeDiff < 0.2) {
+        //     _v3_0.y = 0;
+        // }
+        // _v3_0.y = Math.round(_v3_0.y * 10)/10;
         //修正x轴速度
-        let x = Math.round(dir.x * 100000)/10000000;
-        if (x == 0.0) {
-            _v3_0.x = 0;
-        }
-        console.log('setLinearVelocity1:' + _v3_0  + ": " + this._altitudeDiff + ":" + v);
+        // let x = Math.round(dir.x * 100000)/10000000;
+        // if (x == 0.0) {
+        //     _v3_0.x = 0;
+        // }
+        // console.log('setLinearVelocity1:' + _v3_0  + ": " + this._altitudeDiff + ":" + v);
         this._rigidBody.setLinearVelocity(_v3_0);
     }
 
@@ -122,17 +120,17 @@ export class RigidCharacter extends Component {
 
     applyDamping (dt = 1 / 60) {
         this._rigidBody.getLinearVelocity(_v3_0);
-        console.log('getLinearVelocity2' + _v3_0);
-        let y = _v3_0.y;
-        _v3_0.y = 0;
+        // console.log('getLinearVelocity2' + _v3_0);
+        // let y = _v3_0.y;
+        // _v3_0.y = 0;
         if (_v3_0.lengthSqr() > EPSILON) {
             _v3_0.multiplyScalar(Math.pow(1.0 - this.damping, dt));
-            // //修正y轴速度
-            if(this._altitudeDiff < 0.2) {
-                y = 0;
-            }
-            _v3_0.y = y;
-            console.log('setLinearVelocity2' + _v3_0);
+            // // //修正y轴速度
+            // if(this._altitudeDiff < 0.2) {
+            //     y = 0;
+            // }
+            // _v3_0.y = y;
+            // console.log('setLinearVelocity2' + _v3_0);
             this._rigidBody.setLinearVelocity(_v3_0);
         }
     }
@@ -141,18 +139,18 @@ export class RigidCharacter extends Component {
         const g = this.gravity;
         const m = this._rigidBody.mass;
         _v3_0.set(0, m * g, 0);
-        if(this._altitudeDiff < 0.1) {
-            _v3_0.multiplyScalar(0.1);
-        } else {
-            _v3_0.multiplyScalar(2);
-        }
+        // if(this._altitudeDiff < 0.1) {
+        //     _v3_0.multiplyScalar(0.1);
+        // } else {
+        //     _v3_0.multiplyScalar(2);
+        // }
         this._rigidBody.applyForce(_v3_0)
 
     }
 
     saveState () {
         this._rigidBody.getLinearVelocity(this._velocity);
-        console.log('getLinearVelocity3' + this._velocity  + ":" + this._grounded);
+        // console.log('getLinearVelocity3' + this._velocity  + ":" + this._grounded);
     }
 
     updateContactInfo () {

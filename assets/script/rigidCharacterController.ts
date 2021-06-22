@@ -94,14 +94,15 @@ export class RigidCharactorController extends Component {
         if (this._stateX || this._stateZ) {
             v3_0.set(this._stateX, 0, this._stateZ);
             v3_0.normalize();
-            v3_0.negative();
-            this.targetOrient.forward = v3_0;
-            v3_0.set(this.currentOrient.forward);
-            v3_0.negative();
-            const qm = this.currentOrient.rotation;
-            const qf = this.targetOrient.rotation;
-            const rs = clamp(this.rotationScalar(qm, qf), 0, 1);
-            this.character.move(v3_0, rs);
+            // v3_0.negative();
+            // this.targetOrient.forward = v3_0;
+            // v3_0.set(this.currentOrient.forward);
+            // v3_0.negative();
+            // const qm = this.currentOrient.rotation;
+            // const qf = this.targetOrient.rotation;
+            // const rs = clamp(this.rotationScalar(qm, qf), 0, 1);
+            // v3_0.x = Math.abs(v3_0.x) < 1e-7 ? 0 : v3_0.x;
+            this.character.move(v3_0, 1);
         }
     }
 

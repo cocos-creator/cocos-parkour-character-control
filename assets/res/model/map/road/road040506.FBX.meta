@@ -105,6 +105,8 @@
       "scenes": [
         "f4b775dc-b11e-4edd-85e8-7c12d30c8fda@66eee"
       ]
-    }
+    },
+    "normals": 2,
+    "tangents": 2
   }
 }
