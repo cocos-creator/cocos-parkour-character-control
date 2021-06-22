@@ -1,0 +1,11 @@
+{
+  "__version__": "1.0.1",
+  "physics": {
+    "defaultMaterial": {
+      "rollingFriction": 0.1,
+      "spinningFriction": 0.1,
+      "restitution": 0,
+      "friction": 0.2
+    }
+  }
+}

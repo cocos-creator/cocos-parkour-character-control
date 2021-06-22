@@ -1,0 +1,63 @@
+{
+  "ver": "2.0.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "0e1532f5-7c77-444f-96a0-040393b8c0d5",
+  "files": [],
+  "subMetas": {
+    "c13a0": {
+      "importer": "gltf-mesh",
+      "uuid": "0e1532f5-7c77-444f-96a0-040393b8c0d5@c13a0",
+      "displayName": "",
+      "id": "c13a0",
+      "name": "road04.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "11ef3": {
+      "importer": "gltf-scene",
+      "uuid": "0e1532f5-7c77-444f-96a0-040393b8c0d5@11ef3",
+      "displayName": "",
+      "id": "11ef3",
+      "name": "road04.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": true,
+    "redirect": "0e1532f5-7c77-444f-96a0-040393b8c0d5@11ef3",
+    "assetFinder": {
+      "meshes": [
+        "0e1532f5-7c77-444f-96a0-040393b8c0d5@c13a0"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "47baa7c0-a2a4-43e6-88e9-6e52b6c3dbee"
+      ],
+      "scenes": [
+        "0e1532f5-7c77-444f-96a0-040393b8c0d5@11ef3"
+      ]
+    },
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/res/model/map/road",
+    "disableMeshSplit": true
+  }
+}

@@ -1,0 +1,558 @@
+{
+  "ver": "2.0.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "cac0c16b-7581-4e22-bfbf-f379b13e3f8a",
+  "files": [],
+  "subMetas": {
+    "12496": {
+      "importer": "gltf-animation",
+      "uuid": "cac0c16b-7581-4e22-bfbf-f379b13e3f8a@12496",
+      "displayName": "",
+      "id": "12496",
+      "name": "kick.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 8.333333333333334,
+          "to": 10.333333333333334
+        },
+        "events": [
+          {
+            "frame": 0.03333333333333333,
+            "functionName": "onFrameKickBoss",
+            "parameters": []
+          },
+          {
+            "frame": 0.13333333333333333,
+            "functionName": "onFrameKickOpenBox",
+            "parameters": []
+          },
+          {
+            "frame": 0.36666666666666664,
+            "functionName": "onFrameKickBossOver",
+            "parameters": []
+          },
+          {
+            "frame": 0.7333333333333333,
+            "functionName": "onFrameKickLeaveBox",
+            "parameters": []
+          },
+          {
+            "frame": 0.8333333333333334,
+            "functionName": "onFrameKickHead",
+            "parameters": []
+          },
+          {
+            "frame": 1.4333333333333333,
+            "functionName": "onFrameKickBack",
+            "parameters": []
+          },
+          {
+            "frame": 1.8,
+            "functionName": "onFrameKickEnd",
+            "parameters": []
+          }
+        ],
+        "speed": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "34918": {
+      "importer": "gltf-animation",
+      "uuid": "cac0c16b-7581-4e22-bfbf-f379b13e3f8a@34918",
+      "displayName": "",
+      "id": "34918",
+      "name": "attackRight.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 6.433333333333334,
+          "to": 7.1
+        },
+        "events": []
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "74167": {
+      "importer": "gltf-animation",
+      "uuid": "cac0c16b-7581-4e22-bfbf-f379b13e3f8a@74167",
+      "displayName": "",
+      "id": "74167",
+      "name": "dodgeLeft.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 10.366666666666667,
+          "to": 11.7
+        },
+        "events": []
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "89933": {
+      "importer": "gltf-animation",
+      "uuid": "cac0c16b-7581-4e22-bfbf-f379b13e3f8a@89933",
+      "displayName": "",
+      "id": "89933",
+      "name": "hitSmall.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 7.833333333333333,
+          "to": 8.3
+        },
+        "events": []
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3eea5": {
+      "importer": "gltf-mesh",
+      "uuid": "cac0c16b-7581-4e22-bfbf-f379b13e3f8a@3eea5",
+      "displayName": "",
+      "id": "3eea5",
+      "name": "man01.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1f586": {
+      "importer": "gltf-animation",
+      "uuid": "cac0c16b-7581-4e22-bfbf-f379b13e3f8a@1f586",
+      "displayName": "",
+      "id": "1f586",
+      "name": "idle.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 2
+        },
+        "events": []
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cf5ee": {
+      "importer": "gltf-animation",
+      "uuid": "cac0c16b-7581-4e22-bfbf-f379b13e3f8a@cf5ee",
+      "displayName": "",
+      "id": "cf5ee",
+      "name": "run.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 2.033333333333333,
+          "to": 2.8333333333333335
+        },
+        "events": [],
+        "speed": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "151e9": {
+      "importer": "gltf-animation",
+      "uuid": "cac0c16b-7581-4e22-bfbf-f379b13e3f8a@151e9",
+      "displayName": "",
+      "id": "151e9",
+      "name": "runHit.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 2.9,
+          "to": 3.6666666666666665
+        },
+        "events": [],
+        "speed": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "13c14": {
+      "importer": "gltf-animation",
+      "uuid": "cac0c16b-7581-4e22-bfbf-f379b13e3f8a@13c14",
+      "displayName": "",
+      "id": "13c14",
+      "name": "fightIdle.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 3.7666666666666666,
+          "to": 5.7
+        },
+        "events": [],
+        "speed": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "07a11": {
+      "importer": "gltf-animation",
+      "uuid": "cac0c16b-7581-4e22-bfbf-f379b13e3f8a@07a11",
+      "displayName": "",
+      "id": "07a11",
+      "name": "attackLeft.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 5.733333333333333,
+          "to": 6.4
+        },
+        "events": []
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "67bfe": {
+      "importer": "gltf-animation",
+      "uuid": "cac0c16b-7581-4e22-bfbf-f379b13e3f8a@67bfe",
+      "displayName": "",
+      "id": "67bfe",
+      "name": "hitBig.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 7.133333333333334,
+          "to": 7.8
+        },
+        "events": []
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b4251": {
+      "importer": "gltf-animation",
+      "uuid": "cac0c16b-7581-4e22-bfbf-f379b13e3f8a@b4251",
+      "displayName": "",
+      "id": "b4251",
+      "name": "die.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 13.1,
+          "to": 15.1
+        },
+        "events": [
+          {
+            "frame": 0.9666666666666667,
+            "functionName": "onFrameHitFly",
+            "parameters": []
+          }
+        ],
+        "speed": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a9e48": {
+      "importer": "gltf-animation",
+      "uuid": "cac0c16b-7581-4e22-bfbf-f379b13e3f8a@a9e48",
+      "displayName": "",
+      "id": "a9e48",
+      "name": "life.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 15.133333333333333,
+          "to": 16.133333333333333
+        },
+        "events": []
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ee525": {
+      "importer": "gltf-animation",
+      "uuid": "cac0c16b-7581-4e22-bfbf-f379b13e3f8a@ee525",
+      "displayName": "",
+      "id": "ee525",
+      "name": "win.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 16.166666666666668,
+          "to": 31
+        },
+        "events": []
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "562d4": {
+      "importer": "gltf-animation",
+      "uuid": "cac0c16b-7581-4e22-bfbf-f379b13e3f8a@562d4",
+      "displayName": "",
+      "id": "562d4",
+      "name": "dodgeRight.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 11.733333333333333,
+          "to": 13.066666666666666
+        },
+        "events": []
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "cac0c16b-7581-4e22-bfbf-f379b13e3f8a@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 23
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "787dd": {
+      "importer": "gltf-scene",
+      "uuid": "cac0c16b-7581-4e22-bfbf-f379b13e3f8a@787dd",
+      "displayName": "",
+      "id": "787dd",
+      "name": "manAll.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": true,
+    "dumpMaterials": true,
+    "disableMeshSplit": true,
+    "materialDumpDir": "db://assets/res/model/man",
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 31,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "idle",
+            "from": 0,
+            "to": 2,
+            "wrapMode": 2
+          },
+          {
+            "name": "run",
+            "from": 2.033333333333333,
+            "to": 2.8333333333333335,
+            "wrapMode": 2
+          },
+          {
+            "name": "runHit",
+            "from": 2.9,
+            "to": 3.6666666666666665,
+            "wrapMode": 2
+          },
+          {
+            "name": "fightIdle",
+            "from": 3.7666666666666666,
+            "to": 5.7,
+            "wrapMode": 2
+          },
+          {
+            "name": "attackLeft",
+            "from": 5.733333333333333,
+            "to": 6.4,
+            "wrapMode": 2
+          },
+          {
+            "name": "attackRight",
+            "from": 6.433333333333334,
+            "to": 7.1,
+            "wrapMode": 2
+          },
+          {
+            "name": "hitBig",
+            "from": 7.133333333333334,
+            "to": 7.8,
+            "wrapMode": 2
+          },
+          {
+            "name": "hitSmall",
+            "from": 7.833333333333333,
+            "to": 8.3,
+            "wrapMode": 2
+          },
+          {
+            "name": "kick",
+            "from": 8.333333333333334,
+            "to": 10.333333333333334,
+            "wrapMode": 2
+          },
+          {
+            "name": "dodgeLeft",
+            "from": 10.366666666666667,
+            "to": 11.7,
+            "wrapMode": 2
+          },
+          {
+            "name": "die",
+            "from": 13.1,
+            "to": 15.1,
+            "wrapMode": 2
+          },
+          {
+            "name": "life",
+            "from": 15.133333333333333,
+            "to": 16.133333333333333,
+            "wrapMode": 2
+          },
+          {
+            "name": "win",
+            "from": 16.166666666666668,
+            "to": 31,
+            "wrapMode": 2
+          },
+          {
+            "name": "dodgeRight",
+            "from": 11.733333333333333,
+            "to": 13.066666666666666,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "cac0c16b-7581-4e22-bfbf-f379b13e3f8a@787dd",
+    "assetFinder": {
+      "meshes": [
+        "cac0c16b-7581-4e22-bfbf-f379b13e3f8a@3eea5"
+      ],
+      "skeletons": [
+        "cac0c16b-7581-4e22-bfbf-f379b13e3f8a@438fe"
+      ],
+      "textures": [],
+      "materials": [
+        "3d4aa3cc-38bb-4689-bc0d-8cfc987197dc"
+      ],
+      "scenes": [
+        "cac0c16b-7581-4e22-bfbf-f379b13e3f8a@787dd"
+      ]
+    }
+  }
+}
