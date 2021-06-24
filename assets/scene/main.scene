@@ -27,7 +27,7 @@
         "__id__": 188
       },
       {
-        "__id__": 246
+        "__id__": 248
       },
       {
         "__id__": 355
@@ -50,6 +50,7 @@
     ],
     "_active": true,
     "_components": [],
+    "_prefab": null,
     "autoReleaseAssets": false,
     "_globals": {
       "__id__": 1255
@@ -5334,16 +5335,16 @@
       },
       {
         "__id__": 236
-      }
-    ],
-    "_active": true,
-    "_components": [
+      },
       {
         "__id__": 240
       },
       {
         "__id__": 241
-      },
+      }
+    ],
+    "_active": true,
+    "_components": [
       {
         "__id__": 242
       },
@@ -5355,6 +5356,12 @@
       },
       {
         "__id__": 245
+      },
+      {
+        "__id__": 246
+      },
+      {
+        "__id__": 247
       }
     ],
     "_prefab": null,
@@ -5362,7 +5369,7 @@
       "__type__": "cc.Vec3",
       "x": -0.22,
       "y": 2.177,
-      "z": 1.261
+      "z": 1.704
     },
     "_lrot": {
       "__type__": "cc.Quat",
@@ -7147,7 +7154,7 @@
       "__uuid__": "cac0c16b-7581-4e22-bfbf-f379b13e3f8a@cf5ee",
       "__expectedType__": "cc.AnimationClip"
     },
-    "_useBakedAnimation": true,
+    "_useBakedAnimation": false,
     "_sockets": [],
     "_id": "4d2syoYOBAD7D44R+LCMvN"
   },
@@ -7378,6 +7385,84 @@
     "_lightmapSize": 64
   },
   {
+    "__type__": "cc.Node",
+    "_name": "Left",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 188
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 1.1475,
+      "y": 0.8302500000000013,
+      "z": 8.685000000000002
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 0.75,
+      "y": 0.75,
+      "z": 0.75
+    },
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "bfYt7n8jtLOZyj8U38EeLJ"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Backward",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 188
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 12.057
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "45cyGTkl5OyKnrd+vSoSQU"
+  },
+  {
     "__type__": "cc.CapsuleCollider",
     "_name": "",
     "_objFlags": 0,
@@ -7439,7 +7524,7 @@
     "_enabled": true,
     "__prefab": null,
     "character": {
-      "__id__": 243
+      "__id__": 245
     },
     "currentOrient": {
       "__id__": 189
@@ -7506,7 +7591,7 @@
     },
     "_children": [
       {
-        "__id__": 247
+        "__id__": 249
       },
       {
         "__id__": 306
@@ -7548,26 +7633,20 @@
     "_name": "target-001",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 246
+      "__id__": 248
     },
     "_children": [
       {
-        "__id__": 248
+        "__id__": 250
       },
       {
-        "__id__": 291
+        "__id__": 293
       },
       {
-        "__id__": 294
+        "__id__": 296
       },
       {
-        "__id__": 295
-      },
-      {
-        "__id__": 299
-      },
-      {
-        "__id__": 300
+        "__id__": 297
       }
     ],
     "_active": true,
@@ -7593,7 +7672,7 @@
       "__type__": "cc.Vec3",
       "x": 0.239,
       "y": 2.177,
-      "z": 1.801
+      "z": 1.689
     },
     "_lrot": {
       "__type__": "cc.Quat",
@@ -7622,17 +7701,17 @@
     "_name": "manAll",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 247
+      "__id__": 249
     },
     "_children": [
       {
-        "__id__": 249
+        "__id__": 251
       }
     ],
     "_active": false,
     "_components": [
       {
-        "__id__": 289
+        "__id__": 291
       }
     ],
     "_prefab": null,
@@ -7669,14 +7748,14 @@
     "_name": "RootNode",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 248
+      "__id__": 250
     },
     "_children": [
       {
-        "__id__": 250
+        "__id__": 252
       },
       {
-        "__id__": 285
+        "__id__": 287
       }
     ],
     "_active": true,
@@ -7715,14 +7794,14 @@
     "_name": "Bip001",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 249
+      "__id__": 251
     },
     "_children": [
       {
-        "__id__": 251
+        "__id__": 253
       },
       {
-        "__id__": 252
+        "__id__": 254
       }
     ],
     "_active": true,
@@ -7761,7 +7840,7 @@
     "_name": "Bip001 Footsteps",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 250
+      "__id__": 252
     },
     "_children": [],
     "_active": true,
@@ -7800,11 +7879,11 @@
     "_name": "Bip001 Pelvis",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 250
+      "__id__": 252
     },
     "_children": [
       {
-        "__id__": 253
+        "__id__": 255
       }
     ],
     "_active": true,
@@ -7843,17 +7922,17 @@
     "_name": "Bip001 Spine",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 252
+      "__id__": 254
     },
     "_children": [
       {
-        "__id__": 254
+        "__id__": 256
       },
       {
-        "__id__": 275
+        "__id__": 277
       },
       {
-        "__id__": 280
+        "__id__": 282
       }
     ],
     "_active": true,
@@ -7892,11 +7971,11 @@
     "_name": "Bip001 Spine1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 253
+      "__id__": 255
     },
     "_children": [
       {
-        "__id__": 255
+        "__id__": 257
       }
     ],
     "_active": true,
@@ -7935,11 +8014,11 @@
     "_name": "Bip001 Spine2",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 254
+      "__id__": 256
     },
     "_children": [
       {
-        "__id__": 256
+        "__id__": 258
       }
     ],
     "_active": true,
@@ -7978,17 +8057,17 @@
     "_name": "Bip001 Neck",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 255
+      "__id__": 257
     },
     "_children": [
-      {
-        "__id__": 257
-      },
       {
         "__id__": 259
       },
       {
-        "__id__": 267
+        "__id__": 261
+      },
+      {
+        "__id__": 269
       }
     ],
     "_active": true,
@@ -8027,11 +8106,11 @@
     "_name": "Bip001 Head",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 256
+      "__id__": 258
     },
     "_children": [
       {
-        "__id__": 258
+        "__id__": 260
       }
     ],
     "_active": true,
@@ -8070,7 +8149,7 @@
     "_name": "Bip001 HeadNub",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 257
+      "__id__": 259
     },
     "_children": [],
     "_active": true,
@@ -8109,11 +8188,11 @@
     "_name": "Bip001 R Clavicle",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 256
+      "__id__": 258
     },
     "_children": [
       {
-        "__id__": 260
+        "__id__": 262
       }
     ],
     "_active": true,
@@ -8152,11 +8231,11 @@
     "_name": "Bip001 R UpperArm",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 259
+      "__id__": 261
     },
     "_children": [
       {
-        "__id__": 261
+        "__id__": 263
       }
     ],
     "_active": true,
@@ -8195,11 +8274,11 @@
     "_name": "Bip001 R Forearm",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 260
+      "__id__": 262
     },
     "_children": [
       {
-        "__id__": 262
+        "__id__": 264
       }
     ],
     "_active": true,
@@ -8238,14 +8317,14 @@
     "_name": "Bip001 R Hand",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 261
+      "__id__": 263
     },
     "_children": [
       {
-        "__id__": 263
+        "__id__": 265
       },
       {
-        "__id__": 265
+        "__id__": 267
       }
     ],
     "_active": true,
@@ -8284,11 +8363,11 @@
     "_name": "Bip001 R Finger0",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 262
+      "__id__": 264
     },
     "_children": [
       {
-        "__id__": 264
+        "__id__": 266
       }
     ],
     "_active": true,
@@ -8327,7 +8406,7 @@
     "_name": "Bip001 R Finger0Nub",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 263
+      "__id__": 265
     },
     "_children": [],
     "_active": true,
@@ -8366,11 +8445,11 @@
     "_name": "Bip001 R Finger1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 262
+      "__id__": 264
     },
     "_children": [
       {
-        "__id__": 266
+        "__id__": 268
       }
     ],
     "_active": true,
@@ -8409,7 +8488,7 @@
     "_name": "Bip001 R Finger1Nub",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 265
+      "__id__": 267
     },
     "_children": [],
     "_active": true,
@@ -8448,11 +8527,11 @@
     "_name": "Bip001 L Clavicle",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 256
+      "__id__": 258
     },
     "_children": [
       {
-        "__id__": 268
+        "__id__": 270
       }
     ],
     "_active": true,
@@ -8491,11 +8570,11 @@
     "_name": "Bip001 L UpperArm",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 267
+      "__id__": 269
     },
     "_children": [
       {
-        "__id__": 269
+        "__id__": 271
       }
     ],
     "_active": true,
@@ -8534,11 +8613,11 @@
     "_name": "Bip001 L Forearm",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 268
+      "__id__": 270
     },
     "_children": [
       {
-        "__id__": 270
+        "__id__": 272
       }
     ],
     "_active": true,
@@ -8577,14 +8656,14 @@
     "_name": "Bip001 L Hand",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 269
+      "__id__": 271
     },
     "_children": [
       {
-        "__id__": 271
+        "__id__": 273
       },
       {
-        "__id__": 273
+        "__id__": 275
       }
     ],
     "_active": true,
@@ -8623,11 +8702,11 @@
     "_name": "Bip001 L Finger0",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 270
+      "__id__": 272
     },
     "_children": [
       {
-        "__id__": 272
+        "__id__": 274
       }
     ],
     "_active": true,
@@ -8666,7 +8745,7 @@
     "_name": "Bip001 L Finger0Nub",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 271
+      "__id__": 273
     },
     "_children": [],
     "_active": true,
@@ -8705,11 +8784,11 @@
     "_name": "Bip001 L Finger1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 270
+      "__id__": 272
     },
     "_children": [
       {
-        "__id__": 274
+        "__id__": 276
       }
     ],
     "_active": true,
@@ -8748,7 +8827,7 @@
     "_name": "Bip001 L Finger1Nub",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 273
+      "__id__": 275
     },
     "_children": [],
     "_active": true,
@@ -8787,11 +8866,11 @@
     "_name": "Bip001 L Thigh",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 253
+      "__id__": 255
     },
     "_children": [
       {
-        "__id__": 276
+        "__id__": 278
       }
     ],
     "_active": true,
@@ -8830,11 +8909,11 @@
     "_name": "Bip001 L Calf",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 275
+      "__id__": 277
     },
     "_children": [
       {
-        "__id__": 277
+        "__id__": 279
       }
     ],
     "_active": true,
@@ -8873,11 +8952,11 @@
     "_name": "Bip001 L Foot",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 276
+      "__id__": 278
     },
     "_children": [
       {
-        "__id__": 278
+        "__id__": 280
       }
     ],
     "_active": true,
@@ -8916,11 +8995,11 @@
     "_name": "Bip001 L Toe0",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 277
+      "__id__": 279
     },
     "_children": [
       {
-        "__id__": 279
+        "__id__": 281
       }
     ],
     "_active": true,
@@ -8959,7 +9038,7 @@
     "_name": "Bip001 L Toe0Nub",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 278
+      "__id__": 280
     },
     "_children": [],
     "_active": true,
@@ -8998,11 +9077,11 @@
     "_name": "Bip001 R Thigh",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 253
+      "__id__": 255
     },
     "_children": [
       {
-        "__id__": 281
+        "__id__": 283
       }
     ],
     "_active": true,
@@ -9041,11 +9120,11 @@
     "_name": "Bip001 R Calf",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 280
+      "__id__": 282
     },
     "_children": [
       {
-        "__id__": 282
+        "__id__": 284
       }
     ],
     "_active": true,
@@ -9084,11 +9163,11 @@
     "_name": "Bip001 R Foot",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 281
+      "__id__": 283
     },
     "_children": [
       {
-        "__id__": 283
+        "__id__": 285
       }
     ],
     "_active": true,
@@ -9127,11 +9206,11 @@
     "_name": "Bip001 R Toe0",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 282
+      "__id__": 284
     },
     "_children": [
       {
-        "__id__": 284
+        "__id__": 286
       }
     ],
     "_active": true,
@@ -9170,7 +9249,7 @@
     "_name": "Bip001 R Toe0Nub",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 283
+      "__id__": 285
     },
     "_children": [],
     "_active": true,
@@ -9209,13 +9288,13 @@
     "_name": "man01",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 249
+      "__id__": 251
     },
     "_children": [],
     "_active": true,
     "_components": [
       {
-        "__id__": 286
+        "__id__": 288
       }
     ],
     "_prefab": null,
@@ -9252,11 +9331,11 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 285
+      "__id__": 287
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 287
+      "__id__": 289
     },
     "_materials": [
       {
@@ -9266,7 +9345,7 @@
     ],
     "_visFlags": 0,
     "lightmapSettings": {
-      "__id__": 288
+      "__id__": 290
     },
     "_mesh": {
       "__uuid__": "cac0c16b-7581-4e22-bfbf-f379b13e3f8a@3eea5",
@@ -9280,7 +9359,7 @@
       "__expectedType__": "cc.Skeleton"
     },
     "_skinningRoot": {
-      "__id__": 248
+      "__id__": 250
     },
     "_id": "0ccrCZkHxOsoDcQv1lzHgm"
   },
@@ -9309,11 +9388,11 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 248
+      "__id__": 250
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 290
+      "__id__": 292
     },
     "playOnLoad": true,
     "_clips": [
@@ -9391,13 +9470,13 @@
     "_name": "Camera",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 247
+      "__id__": 249
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 292
+        "__id__": 294
       }
     ],
     "_prefab": null,
@@ -9434,11 +9513,11 @@
     "_name": "Camera<CameraComponent>",
     "_objFlags": 0,
     "node": {
-      "__id__": 291
+      "__id__": 293
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 293
+      "__id__": 295
     },
     "_projection": 1,
     "_priority": 0,
@@ -9481,7 +9560,7 @@
     "_name": "targetOrient",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 247
+      "__id__": 249
     },
     "_children": [],
     "_active": true,
@@ -9520,13 +9599,13 @@
     "_name": "Capsule",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 247
+      "__id__": 249
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 296
+        "__id__": 298
       }
     ],
     "_prefab": null,
@@ -9563,11 +9642,11 @@
     "_name": "Capsule<ModelComponent>",
     "_objFlags": 0,
     "node": {
-      "__id__": 295
+      "__id__": 297
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 297
+      "__id__": 299
     },
     "_materials": [
       {
@@ -9577,7 +9656,7 @@
     ],
     "_visFlags": 0,
     "lightmapSettings": {
-      "__id__": 298
+      "__id__": 300
     },
     "_mesh": {
       "__uuid__": "1263d74c-8167-4928-91a6-4e2672411f47@801ec",
@@ -9609,89 +9688,11 @@
     "_lightmapSize": 64
   },
   {
-    "__type__": "cc.Node",
-    "_name": "Left",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 247
-    },
-    "_children": [],
-    "_active": true,
-    "_components": [],
-    "_prefab": null,
-    "_lpos": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 1.107,
-      "z": 11.63
-    },
-    "_lrot": {
-      "__type__": "cc.Quat",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 1
-    },
-    "_lscale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_layer": 1073741824,
-    "_euler": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_id": "bfYt7n8jtLOZyj8U38EeLJ"
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "Backward",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 247
-    },
-    "_children": [],
-    "_active": true,
-    "_components": [],
-    "_prefab": null,
-    "_lpos": {
-      "__type__": "cc.Vec3",
-      "x": -1.53,
-      "y": 0,
-      "z": 14.36666666666667
-    },
-    "_lrot": {
-      "__type__": "cc.Quat",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 1
-    },
-    "_lscale": {
-      "__type__": "cc.Vec3",
-      "x": 1.3333333333333335,
-      "y": 1.3333333333333335,
-      "z": 1.3333333333333335
-    },
-    "_layer": 1073741824,
-    "_euler": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_id": "45cyGTkl5OyKnrd+vSoSQU"
-  },
-  {
     "__type__": "cc.CapsuleCollider",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 247
+      "__id__": 249
     },
     "_enabled": true,
     "__prefab": null,
@@ -9713,7 +9714,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 247
+      "__id__": 249
     },
     "_enabled": true,
     "__prefab": null,
@@ -9743,7 +9744,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 247
+      "__id__": 249
     },
     "_enabled": true,
     "__prefab": null,
@@ -9751,10 +9752,10 @@
       "__id__": 304
     },
     "currentOrient": {
-      "__id__": 248
+      "__id__": 250
     },
     "targetOrient": {
-      "__id__": 294
+      "__id__": 296
     },
     "rotateFactor": 0.35,
     "speed": {
@@ -9770,12 +9771,12 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 247
+      "__id__": 249
     },
     "_enabled": true,
     "__prefab": null,
     "camera": {
-      "__id__": 292
+      "__id__": 294
     },
     "maxSpeed": 8,
     "damping": 0,
@@ -9788,7 +9789,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 247
+      "__id__": 249
     },
     "_enabled": false,
     "__prefab": null,
@@ -9799,7 +9800,7 @@
     "_name": "target-spring",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 246
+      "__id__": 248
     },
     "_children": [
       {
@@ -9820,7 +9821,7 @@
       "__type__": "cc.Vec3",
       "x": 0.24,
       "y": 2.177,
-      "z": 1.801
+      "z": 1.689
     },
     "_lrot": {
       "__type__": "cc.Quat",
@@ -11580,7 +11581,7 @@
     },
     "_materials": [
       {
-        "__uuid__": "367f8a02-f179-4855-8d54-f92eaab807fd",
+        "__uuid__": "3f078f52-0116-4c4e-a8f4-ced543d6ff24",
         "__expectedType__": "cc.Material"
       }
     ],
@@ -11698,7 +11699,7 @@
       "__uuid__": "cac0c16b-7581-4e22-bfbf-f379b13e3f8a@cf5ee",
       "__expectedType__": "cc.AnimationClip"
     },
-    "_useBakedAnimation": true,
+    "_useBakedAnimation": false,
     "_sockets": [],
     "_id": "64q9E1DtNFWIku+64+4dvF"
   },
@@ -11716,7 +11717,7 @@
     "_enabled": true,
     "__prefab": null,
     "connect": {
-      "__id__": 247
+      "__id__": 249
     },
     "constant": 800,
     "threshold": 0,
@@ -11871,7 +11872,7 @@
     "_enabled": true,
     "__prefab": null,
     "followTarget": {
-      "__id__": 299
+      "__id__": 240
     },
     "_id": "89Kh7LqtNJ9LIZnLQoqoQR"
   },
@@ -11972,7 +11973,7 @@
     "_enabled": true,
     "__prefab": null,
     "followTarget": {
-      "__id__": 247
+      "__id__": 249
     },
     "_id": "25ZUJmtdRFFYSa1BbXV8hv"
   },
@@ -14339,7 +14340,7 @@
     "_enabled": true,
     "__prefab": null,
     "followTarget": {
-      "__id__": 300
+      "__id__": 241
     },
     "_id": "e70WJ6LwxDM4E2MTt7u3x8"
   },
@@ -32783,8 +32784,8 @@
   },
   {
     "__type__": "cc.ShadowsInfo",
-    "_type": 0,
-    "_enabled": false,
+    "_type": 1,
+    "_enabled": true,
     "_normal": {
       "__type__": "cc.Vec3",
       "x": 0,
@@ -32794,9 +32795,9 @@
     "_distance": 0,
     "_shadowColor": {
       "__type__": "cc.Color",
-      "r": 76,
-      "g": 76,
-      "b": 76,
+      "r": 0,
+      "g": 0,
+      "b": 0,
       "a": 255
     },
     "_autoAdapt": true,

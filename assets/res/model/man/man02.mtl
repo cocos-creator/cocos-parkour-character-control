@@ -32,9 +32,9 @@
     {
       "mainColor": {
         "__type__": "cc.Color",
-        "r": 48,
-        "g": 255,
-        "b": 56,
+        "r": 0,
+        "g": 195,
+        "b": 0,
         "a": 255
       },
       "albedoScale": {
