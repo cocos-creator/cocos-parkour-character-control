@@ -6,6 +6,8 @@
       "spinningFriction": 0.1,
       "restitution": 0,
       "friction": 0.2
-    }
+    },
+    "fixedTimeStep": 0.0166667,
+    "maxSubSteps": 1
   }
 }
