@@ -1,5 +1,5 @@
 
-import { _decorator, Component, Node, PhysicsSystem, Vec3 } from 'cc';
+import { _decorator, Component, Node, PhysicsSystem, Vec3, director, Director } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('SuspensionSpring')
@@ -14,7 +14,11 @@ export class SuspensionSpring extends Component {
     @property
     threshold = 1e-3;
 
-    update(deltaTime: number) {
+    start() {
+        director.on(Director.EVENT_AFTER_PHYSICS, this.spring, this);
+    }
+
+    spring() {
         const dt = PhysicsSystem.instance.fixedTimeStep;
         const pos = this.node.worldPosition;
         const cpos = this.connect.worldPosition;
