@@ -37,9 +37,6 @@ class ContactPool {
 }
 @ccclass('RigidCharacter')
 export class RigidCharacter extends Component {
-    @property({ type: CameraComponent })
-    camera: CameraComponent = null!;
-
     @property
     maxSpeed = 5;
 
@@ -60,12 +57,6 @@ export class RigidCharacter extends Component {
     _groundContact: ContactPoint = null!;
     _groundNormal = Vec3.UP.clone();
 
-
-    _initTargetPosition: Vec3 = new Vec3();
-    _initCameraPosition: Vec3 = new Vec3();
-    _altitudeDiff: number = 0;
-
-
     _velocity = new Vec3();
     get velocity() { return this._velocity; }
     get onGround() { return this._grounded; }
@@ -78,13 +69,10 @@ export class RigidCharacter extends Component {
         this._collider.on('onCollisionEnter', this.onCollision, this);
         this._collider.on('onCollisionStay', this.onCollision, this);
         this._collider.on('onCollisionExit', this.onCollision, this);
-        this._initCameraPosition = this.camera.node.getPosition();
-        this._initTargetPosition = this.node.getPosition();
     }
 
     move(dir: Vec3, speed: number) {
         this._rigidBody.getLinearVelocity(_v3_0);
-        // console.log('getLinearVelocity1' + _v3_0);
         Vec3.scaleAndAdd(_v3_0, _v3_0, dir, speed);
 
         const ms = this.maxSpeed;
@@ -105,9 +93,6 @@ export class RigidCharacter extends Component {
 
     applyDamping(dt = 1 / 60) {
         this._rigidBody.getLinearVelocity(_v3_0);
-        // console.log('getLinearVelocity2' + _v3_0);
-        // let y = _v3_0.y;
-        // _v3_0.y = 0;
         if (_v3_0.lengthSqr() > EPSILON) {
             _v3_0.multiplyScalar(Math.pow(1.0 - this.damping, dt));
             this._rigidBody.setLinearVelocity(_v3_0);
@@ -124,7 +109,6 @@ export class RigidCharacter extends Component {
 
     saveState() {
         this._rigidBody.getLinearVelocity(this._velocity);
-        console.log(director.getTotalFrames(), 'getLinearVelocity3' + this._velocity + ":" + this._grounded);
     }
 
     updateContactInfo() {
@@ -155,26 +139,11 @@ export class RigidCharacter extends Component {
     }
 
     onCollision(event: ICollisionEvent) {
-        // console.log('onCollision' + event.selfCollider.node.getPosition());
-        let currentTargetPosition = event.selfCollider.node.getPosition();
-        let y = currentTargetPosition.y - this._initTargetPosition.y;
-        this._altitudeDiff = y;
-        // console.log('this._altitudeDiff' + this._altitudeDiff + ': ' + this.node.getPosition());
-        y = this._initCameraPosition.y + Math.sin(y) * 3;
-        let z = this._initCameraPosition.z - Math.cos(y) * 3;
-
-        // y = Math.round(y * 10)/10;
-        // z = Math.round(z * 10)/10;
-        let pos = this.camera.node.getPosition();
-        this.camera.node.setPosition(this._initCameraPosition.x, y, z);
-        this.camera.node.lookAt(this.node.getPosition());
-        // console.log('camera' + this.camera.node.getPosition());
         ContactPool.getContacts(event.contacts, event.selfCollider, this._contacts);
-
     }
 }
 
-function useCCD(rb: RigidBody, ms = 0.001, sr = 0.05) {
+function useCCD(rb: RigidBody, ms = 0.0001, sr = 0.005) {
     if (rb) {
         if (PhysicsSystem.PHYSICS_AMMO) {
             const Ammo = (globalThis as any)['Ammo'];

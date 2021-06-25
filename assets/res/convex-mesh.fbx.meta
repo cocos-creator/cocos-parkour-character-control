@@ -565,12 +565,12 @@
       ],
       "subMetas": {}
     },
-    "7b56e": {
+    "f516d": {
       "importer": "gltf-scene",
-      "uuid": "ae3fd785-d88a-4799-9611-97ecc454324f@7b56e",
+      "uuid": "ae3fd785-d88a-4799-9611-97ecc454324f@f516d",
       "displayName": "",
-      "id": "7b56e",
-      "name": "map.prefab",
+      "id": "f516d",
+      "name": "convex-mesh.prefab",
       "userData": {
         "gltfIndex": 0
       },
@@ -585,7 +585,7 @@
   "userData": {
     "imageMetas": [],
     "legacyFbxImporter": false,
-    "redirect": "ae3fd785-d88a-4799-9611-97ecc454324f@7b56e",
+    "redirect": "ae3fd785-d88a-4799-9611-97ecc454324f@f516d",
     "assetFinder": {
       "meshes": [
         "ae3fd785-d88a-4799-9611-97ecc454324f@e2349",
@@ -627,7 +627,7 @@
         "ae3fd785-d88a-4799-9611-97ecc454324f@35ea4"
       ],
       "scenes": [
-        "ae3fd785-d88a-4799-9611-97ecc454324f@7b56e"
+        "ae3fd785-d88a-4799-9611-97ecc454324f@f516d"
       ]
     }
   }

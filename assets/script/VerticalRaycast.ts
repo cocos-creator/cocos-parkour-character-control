@@ -17,7 +17,7 @@ export class VerticalRaycast extends Component {
         let y = pos.y;
         Vec3.copy(tmpRay.o, pos);
         tmpRay.o.y += 1;
-        if (PhysicsSystem.instance.raycastClosest(tmpRay, this.group, 1.2)) {
+        if (PhysicsSystem.instance.raycastClosest(tmpRay, this.group, 1.1)) {
             y = PhysicsSystem.instance.raycastClosestResult.hitPoint.y
         }
         tmpRay.o.y = y;
