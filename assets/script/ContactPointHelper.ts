@@ -91,10 +91,11 @@ export class ContactPointHelper extends Component {
                     pt.active = true; aw.active = true;
                 } else {
                     pt = instantiate(ContactPointHelper._point);
-                    pt.setWorldScale(0.1, 0.1, 0.1);
+                    pt.setWorldScale(0.075, 0.075, 0.075);
                     pt.setParent(ContactPointHelper._container);
 
                     aw = instantiate(ContactPointHelper._arrow);
+                    aw.setWorldScale(0.75, 0.75, 0.75);
                     aw.setParent(ContactPointHelper._container);
 
                     map.pt.push(pt);
