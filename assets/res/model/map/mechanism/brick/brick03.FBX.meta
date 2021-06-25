@@ -1,0 +1,76 @@
+{
+  "ver": "2.0.14",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "d9266edd-116b-4456-bcde-9117303824c5",
+  "files": [],
+  "subMetas": {
+    "1acd8": {
+      "importer": "gltf-mesh",
+      "uuid": "d9266edd-116b-4456-bcde-9117303824c5@1acd8",
+      "displayName": "",
+      "id": "1acd8",
+      "name": "brick01.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0280e": {
+      "importer": "gltf-material",
+      "uuid": "d9266edd-116b-4456-bcde-9117303824c5@0280e",
+      "displayName": "",
+      "id": "0280e",
+      "name": "brick.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4eef0": {
+      "importer": "gltf-scene",
+      "uuid": "d9266edd-116b-4456-bcde-9117303824c5@4eef0",
+      "displayName": "",
+      "id": "4eef0",
+      "name": "brick03.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "redirect": "d9266edd-116b-4456-bcde-9117303824c5@4eef0",
+    "assetFinder": {
+      "meshes": [
+        "d9266edd-116b-4456-bcde-9117303824c5@1acd8"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "d9266edd-116b-4456-bcde-9117303824c5@0280e"
+      ],
+      "scenes": [
+        "d9266edd-116b-4456-bcde-9117303824c5@4eef0"
+      ]
+    }
+  }
+}

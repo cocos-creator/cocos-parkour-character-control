@@ -1,0 +1,63 @@
+{
+  "ver": "2.0.14",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "73d84de8-bcba-4d4c-afca-6100df4f8994",
+  "files": [],
+  "subMetas": {
+    "1acd8": {
+      "importer": "gltf-mesh",
+      "uuid": "73d84de8-bcba-4d4c-afca-6100df4f8994@1acd8",
+      "displayName": "",
+      "id": "1acd8",
+      "name": "brick01.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d05c4": {
+      "importer": "gltf-scene",
+      "uuid": "73d84de8-bcba-4d4c-afca-6100df4f8994@d05c4",
+      "displayName": "",
+      "id": "d05c4",
+      "name": "brick01.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": true,
+    "redirect": "73d84de8-bcba-4d4c-afca-6100df4f8994@d05c4",
+    "assetFinder": {
+      "meshes": [
+        "73d84de8-bcba-4d4c-afca-6100df4f8994@1acd8"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "7a02b2b9-4cbe-4596-8150-390705aa9875"
+      ],
+      "scenes": [
+        "73d84de8-bcba-4d4c-afca-6100df4f8994@d05c4"
+      ]
+    },
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/res/model/map/mechanism/brick",
+    "disableMeshSplit": true
+  }
+}
