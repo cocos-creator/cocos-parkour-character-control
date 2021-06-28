@@ -1,5 +1,5 @@
 
-import { _decorator, Component, Node, RigidBodyComponent, ColliderComponent, ITriggerEvent } from 'cc';
+import { _decorator, Component, Node, RigidBodyComponent, ColliderComponent, ITriggerEvent, ICollisionEvent } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('Wall')
@@ -24,8 +24,25 @@ export class Wall extends Component {
             value.mass = this.mass;
             value.linearDamping = this.linearDamping;
             value.angularDamping = this.angularDamping;
+            // value.sleep();
+            value.useGravity = false;
+            
+            
         });
 
+        let collider = this.node.getComponent(ColliderComponent);
+        collider?.on('onTriggerEnter', this._onTriggerEnter, this);
+
+    }
+
+    _onTriggerEnter(event?:ITriggerEvent) {
+        let other = event?.otherCollider;
+        if (other?.node.name.indexOf('target') === -1) return;
+        let rArr =  this.node.getComponentsInChildren(RigidBodyComponent);
+        rArr.forEach((value: RigidBodyComponent) => {
+            // value.wakeUp();
+            value.useGravity = true;
+        });
     }
 
     // update (deltaTime: number) {
