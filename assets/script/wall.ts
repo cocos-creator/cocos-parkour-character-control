@@ -1,11 +1,16 @@
 
-import { _decorator, Component, Node, RigidBodyComponent, ColliderComponent, ITriggerEvent, ICollisionEvent } from 'cc';
+import { _decorator, Component, Node, RigidBodyComponent, ColliderComponent, ITriggerEvent, ICollisionEvent, Prefab, instantiate } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('Wall')
 export class Wall extends Component {
     // [1]
     // dummy = '';
+    @property(Prefab)
+    wallPrefab: Prefab = null!;
+
+    @property(Node)
+    wallNode: Node = null!;
 
     // [2]
     @property
@@ -19,20 +24,7 @@ export class Wall extends Component {
 
     start () {
         // [3]
-        let rArr =  this.node.getComponentsInChildren(RigidBodyComponent);
-        rArr.forEach((value: RigidBodyComponent) => {
-            value.mass = this.mass;
-            value.linearDamping = this.linearDamping;
-            value.angularDamping = this.angularDamping;
-            // value.sleep();
-            value.useGravity = false;
-            
-            
-        });
-
-        let collider = this.node.getComponent(ColliderComponent);
-        collider?.on('onTriggerEnter', this._onTriggerEnter, this);
-
+        this.createWall();
     }
 
     _onTriggerEnter(event?:ITriggerEvent) {
@@ -43,6 +35,28 @@ export class Wall extends Component {
             // value.wakeUp();
             value.useGravity = true;
         });
+    }
+
+    createWall () {
+        if (this.wallNode.children.length) {
+            this.wallNode.removeAllChildren();
+        }
+
+        let node = instantiate(this.wallPrefab);
+        this.wallNode.addChild(node);
+        let rArr =  node.getComponentsInChildren(RigidBodyComponent);
+        rArr.forEach((value: RigidBodyComponent) => {
+            value.mass = this.mass;
+            value.linearDamping = this.linearDamping;
+            value.angularDamping = this.angularDamping;
+            // value.sleep();
+            value.useGravity = false;
+            
+            
+        });
+
+        let collider = node.getComponent(ColliderComponent);
+        collider?.on('onTriggerEnter', this._onTriggerEnter, this);
     }
 
     // update (deltaTime: number) {
