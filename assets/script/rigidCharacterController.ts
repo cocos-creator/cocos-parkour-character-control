@@ -1,5 +1,5 @@
 
-import { _decorator, Component, Node, Vec2, Vec3, Quat, clamp, systemEvent, SystemEventType, Touch, ColliderComponent, PhysicsSystem } from 'cc';
+import { _decorator, Component, Node, Vec2, Vec3, Quat, clamp, input, Input, EventTouch, ColliderComponent, PhysicsSystem } from 'cc';
 import { RigidCharacter } from './rigidCharacter';
 const { ccclass, property } = _decorator;
 const v3_0 = new Vec3();
@@ -22,26 +22,26 @@ export class RigidCharactorController extends Component {
     }
 
     onEnable () {
-        systemEvent.on(SystemEventType.TOUCH_START, this.touchStart, this);
-        systemEvent.on(SystemEventType.TOUCH_MOVE, this.touchMove, this);
-        systemEvent.on(SystemEventType.TOUCH_END, this.touchEnd, this);
-        systemEvent.on(SystemEventType.TOUCH_CANCEL, this.touchCancel, this);
+        input.on(Input.EventType.TOUCH_START, this.touchStart, this);
+        input.on(Input.EventType.TOUCH_MOVE, this.touchMove, this);
+        input.on(Input.EventType.TOUCH_END, this.touchEnd, this);
+        input.on(Input.EventType.TOUCH_CANCEL, this.touchCancel, this);
 
     } 
 
     onDisable () {
-        systemEvent.off(SystemEventType.TOUCH_START, this.touchStart, this);
-        systemEvent.off(SystemEventType.TOUCH_MOVE, this.touchMove, this);
-        systemEvent.off(SystemEventType.TOUCH_END, this.touchEnd, this);
-        systemEvent.off(SystemEventType.TOUCH_CANCEL, this.touchCancel, this);
+        input.off(Input.EventType.TOUCH_START, this.touchStart, this);
+        input.off(Input.EventType.TOUCH_MOVE, this.touchMove, this);
+        input.off(Input.EventType.TOUCH_END, this.touchEnd, this);
+        input.off(Input.EventType.TOUCH_CANCEL, this.touchCancel, this);
 
     }
 
-    touchStart (touch: Touch) {
+    touchStart (touch: EventTouch) {
         this._stateX = 0;
     }
 
-    touchMove (touch: Touch) {
+    touchMove (touch: EventTouch) {
         let x = touch.getUIDelta().x;
         if (x > 0) {
             this._stateX = this.speed.x;  
@@ -50,11 +50,11 @@ export class RigidCharactorController extends Component {
         }
     }
 
-    touchEnd (touch: Touch) {
+    touchEnd (touch: EventTouch) {
         this._stateX = 0;
     }
 
-    touchCancel (touch: Touch) {
+    touchCancel (touch: EventTouch) {
         this._stateX = 0;
     }
 
